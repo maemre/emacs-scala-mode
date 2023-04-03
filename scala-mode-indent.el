@@ -515,6 +515,7 @@ Returns point or (point-min) if not inside a block."
 
 (defun scala-indent:relative-indent-by-elem (syntax-elem)
   "TODO document"
+  (message "indenting according to %s" syntax-elem)
   (pcase syntax-elem
     ;; after-decl
     (`(after-decl else) -2)
